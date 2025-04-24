@@ -1010,9 +1010,11 @@ changed it, and to re-index any autoloads in it.
 *** Configuring packages
 If your configuration needs are simple, the ~use-package!~, ~after!~,
 ~add-hook!~ and ~setq-hook!~ macros are your bread and butter.
+Please remember that package configuration with ~use-package!~ is 
+done in ~config.el~, NOT ~packages.el~. 
 
 #+BEGIN_SRC emacs-lisp
-;;; ~/.doom.d/config.el (example)
+;;; ~/.doom.d/config.el (example) NOT ~/.doom.d/packages.el
 (setq doom-font (font-spec :family "Fira Mono" :size 12))
 
 ;; Takes a feature symbol or a library name (string)
